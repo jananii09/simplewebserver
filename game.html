@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Number Guessing Game</title>
+        <script>
+            function startGame() {
+                var Number = Math.floor(Math.random() * 10) + 1;
+                var attempts = 0;
+                function checkGuess() {
+                    var Guess = document.getElementById("guessInput").value;
+                    attempts++; 
+                    if (Guess == Number) {
+                        document.getElementById('result').innerText = "Congratulations! You guessed it in " + attempts + " attempts!";
+                    }
+                    else if (Guess < Number) {
+                        document.getElementById('result').innerText = "low! Try again.";
+                    }
+                    else {
+                        document.getElementById('result').innerText = "high! Try again.";
+                    }
+                }
+                document.getElementById("guessButton").onclick = checkGuess;
+            }
+            window.onload = startGame;
+        </script>
+    </head>
+    <body align="center">
+        <h1>Number Guessing Game</h1>
+        <p>Guess the number between 1 and 10:</p>
+        <input type="number" id="guessInput" placeholder="Enter your guess"><br><br>
+        <input type="button" id="guessButton" value="Submit Guess"><br><br>
+        <label id="result"></label>
+    </body>
+</html>

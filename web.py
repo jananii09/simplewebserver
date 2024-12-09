@@ -1,6 +1,6 @@
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
-content='''
+content="""
 <html>
 <title>Top Software Industries</title>
 <body>
@@ -34,7 +34,7 @@ content='''
 <th>5.6 billion</th>
 </body>
 </html>
-'''
+"""
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
