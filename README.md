@@ -25,7 +25,7 @@ Testing the webserver.
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
 
-content="""
+content=
 <html>
 <title>Top Software Industries</title>
 <body>
@@ -58,7 +58,7 @@ content="""
 <th>symentec</th>
 <th>5.6 billion</th>
 </body>
-</html>"""
+</html>
 
 
 class MyServer(BaseHTTPRequestHandler):
