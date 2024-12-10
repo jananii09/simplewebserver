@@ -1,5 +1,6 @@
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
+
 content="""
 <html>
 <title>Top Software Industries</title>
